@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+}
+
+main.container {
+  width: 27rem;
+  height: 26rem;
+  background-color: hsl(215, 17%, 14%);
+  color: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+#thanks {
+  text-align: center;
+  padding: 0 0.8rem;
+}
+#thanks img {
+  padding: 0.75rem;
+  margin-bottom: 1.3rem;
+}
+#thanks h2 {
+  margin-top: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+#thanks > p {
+  margin-bottom: 1.3rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: hsl(217, 12%, 63%);
+}
+#thanks > p.score {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 1rem;
+  padding: 0.3rem 0;
+  width: 12rem;
+  margin: 0 auto;
+}
+
+#rating {
+  padding: 0 1rem;
+}
+#rating fieldset {
+  border: none;
+  text-align: center;
+}
+#rating img {
+  padding: 0.75rem;
+  border-radius: 50%;
+  margin-bottom: 1.3rem;
+  background-color: hsl(213, 19%, 18%);
+}
+#rating h2 {
+  margin-bottom: 1.3rem;
+  font-size: 1.8rem;
+}
+#rating p {
+  margin-bottom: 1.3rem;
+  font-size: 1rem;
+}
+#rating .fcolor {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5rem;
+}
+#rating input[type=radio] {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.9rem;
+  margin-left: 1.3rem;
+}
+#rating input[type=button] {
+  width: 100%;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  margin-top: 2rem;
+  border: none;
+}
+#rating input[type=button]:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+#rating #rating_1::after {
+  content: "1";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+}
+#rating #rating_1:hover::after {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#rating #rating_1:checked::after {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#rating input#rating_2::after {
+  content: "2";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+}
+#rating #rating_2:hover::after {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#rating #rating_2:checked::after {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#rating input#rating_3::after {
+  content: "3";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+}
+#rating #rating_3:hover::after {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#rating #rating_3:checked::after {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#rating input#rating_4::after {
+  content: "4";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+}
+#rating #rating_4:hover::after {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#rating #rating_4:checked::after {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#rating input#rating_5::after {
+  content: "5";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+}
+#rating #rating_5:hover::after {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#rating #rating_5:checked::after {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+#rating label {
+  display: inline-block;
+  margin-right: -5px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+footer.attribution {
+  font-size: 0.6rem;
+  text-align: center;
+  color: white;
+}
+footer.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 767px) {
+  main.container {
+    width: 20rem;
+    height: 23rem;
+    padding: 1.5rem 0.8rem;
+  }
+  #rating {
+    padding: 0 1rem;
+  }
+  #rating h2 {
+    margin-bottom: 1.1rem;
+    font-size: 1.3rem;
+  }
+  #rating p {
+    margin-bottom: 1.3rem;
+    font-size: 0.8rem;
+  }
+  #rating .fcolor {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.3rem;
+  }
+  #rating input[type=button] {
+    width: 100%;
+    height: 2.6rem;
+    margin-top: 1rem;
+  }
+  #rating input[type=radio] {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.9rem 0.5rem;
+  }
+  #rating #rating_1::after {
+    content: "1";
+    position: absolute;
+    top: -0.5rem;
+    left: -0.2rem;
+    padding: 0.8rem 1rem;
+    border-radius: 50%;
+  }
+  #rating input#rating_2::after {
+    content: "2";
+    position: absolute;
+    top: -0.5rem;
+    left: -0.2rem;
+    padding: 0.8rem 1rem;
+  }
+  #rating input#rating_3::after {
+    content: "3";
+    position: absolute;
+    top: -0.5rem;
+    left: -0.2rem;
+    padding: 0.8rem 1rem;
+  }
+  #rating input#rating_4::after {
+    content: "4";
+    position: absolute;
+    top: -0.5rem;
+    left: -0.2rem;
+    padding: 0.8rem 1rem;
+  }
+  #rating input#rating_5::after {
+    content: "5";
+    position: absolute;
+    top: -0.5rem;
+    left: -0.2rem;
+    padding: 0.8rem 1rem;
+  }
+  #thanks > p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+}
